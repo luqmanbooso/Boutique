@@ -1,0 +1,391 @@
+/* General body settings */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Header Stats Section */
+.header-stats {
+    display: flex;
+    justify-content: space-around; /* Space between boxes */
+    align-items: center; /* Center items vertically */
+    padding: 20px 0; /* Add some vertical padding */
+    background-color: #f7f9fc; /* Light background color for contrast */
+    margin: 20px 0; /* Margin above and below the stats section */
+    
+}
+
+/* Individual stat box styling */
+.stat-box {
+    background-color: #2d3a54; /* Solid dark background */
+    color: white; /* White text color for contrast */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Inner padding */
+    flex: 1; /* Make the boxes equal width */
+    margin: 0 10px; /* Horizontal margin between boxes */
+    text-align: center; /* Center the text */
+    min-width: 100px; /* Minimum width for boxes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    z-index: 1; /* Ensure boxes are above the header stats section */
+}
+
+.stat-box h3 {
+    font-size: 20px; /* Font size for headings */
+    margin-bottom: 10px; /* Space below headings */
+}
+
+.stat-box p {
+    font-size: 24px; /* Larger font size for numbers */
+    font-weight: bold; /* Bold for emphasis */
+}
+
+
+
+/* Main container to hold both the sidebar and the table */
+.main-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 260px;
+    background-color: #2d3a54;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.sidebar ul li a:hover {
+    color: #e6c35c;
+}
+.sidebar .nav-link.active {
+  background-color: #007bff;
+}
+
+/* Admin profile at the bottom of the sidebar */
+.admin-profile {
+    text-align: center;
+    margin-top: auto;
+}
+
+.admin-img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.admin-profile p {
+    color: white;
+    font-size: 16px;
+}
+
+/* Table container that covers the rest of the screen */
+.table-container {
+    flex: 1;
+    padding: 40px;
+    position: relative;
+    z-index: 4; /* Ensures the table is above the background image */
+    color: #333; /* Dark text color for better visibility */
+}
+
+/* Background image */
+.background-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8; /* Light opacity for the image */
+}
+
+/* Table styling */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+}
+
+.styled-table thead tr {
+    background-color: #2d3a54;
+    color: white;
+    text-align: left;
+    
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 20px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.styled-table tbody tr td a {
+    margin-right: 8px;
+     z-index: 3;
+}
+
+/* Button styles */
+.btn-secondary {
+    background-color: #4b5d77;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.btn-danger {
+    background-color: #e04b59;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.btn-secondary:hover {
+    background-color: #36475e;
+}
+
+.btn-danger:hover {
+    background-color: #d13243;
+}
+
+/* Add new room button */
+.add-room-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #2d3a54;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    position: relative;
+    z-index: 3;
+}
+
+.add-room-btn:hover {
+    background-color: #1f293b;
+}
+
+
+
+
+/* Footer Section Begin */
+.footer-section {
+    background-color: #232836;
+    padding: 60px 0;
+    color: #c7c7d1;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer-section .footer-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.ft-about {
+    max-width: 300px;
+}
+
+.ft-about .logo img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.ft-about p {
+    margin-bottom: 30px;
+    line-height: 1.6;
+    color: #a8a8b3;
+}
+
+.ft-about .fa-social {
+    display: flex;
+    gap: 15px;
+}
+
+.fa-social a {
+    color: #fff;
+    font-size: 18px;
+}
+
+.fa-social a:hover {
+    color: #f8af29;
+}
+
+/* Contact Section */
+.ft-contact {
+    color: #e0e0e7;
+}
+
+.ft-contact h6 {
+    font-size: 18px;
+    color: #f8af29;
+    margin-bottom: 20px;
+}
+
+.ft-contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ft-contact ul li {
+    margin-bottom: 10px;
+}
+
+/* Newsletter Section */
+.ft-newslatter h6 {
+    font-size: 18px;
+    color: #f8af29;
+    margin-bottom: 20px;
+}
+
+.ft-newslatter p {
+    margin-bottom: 20px;
+}
+
+.ft-newslatter input[type="text"] {
+    padding: 10px;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.ft-newslatter button {
+    background-color: #f8af29;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ft-newslatter button i {
+    font-size: 16px;
+}
+
+.ft-newslatter button:hover {
+    background-color: #f19c10;
+}
+
+/* Copyright Section */
+.copyright-option {
+    background-color: #1c1f29;
+    padding: 20px 0;
+}
+
+.copyright-option ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.copyright-option ul li a {
+    color: #c7c7d1;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.copyright-option ul li a:hover {
+    color: #f8af29;
+}
+
+.co-text {
+    text-align: right;
+    color: #a8a8b3;
+    font-size: 14px;
+}
+
+.co-text a {
+    color: #f8af29;
+    text-decoration: none;
+}
+
+.co-text a:hover {
+    color: #f19c10;
+}
+
+.co-text i {
+    color: red;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-text {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ft-contact,
+    .ft-newslatter {
+        margin-top: 30px;
+    }
+
+    .copyright-option ul {
+        justify-content: center;
+    }
+
+    .co-text {
+        text-align: center;
+    }
+}
+
+
