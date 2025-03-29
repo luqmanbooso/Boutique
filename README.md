@@ -6,4 +6,5 @@ Technologies Used
 <ul> <li>Java (OOP)</li> <li>MySQL Database</li> <li>JavaFX (UI)</li> <li>MVC Architecture</li> </ul>
 Skills Demonstrated
 <ul> <li>Object-Oriented Programming</li> <li>Database Management</li> <li>User Interface Design</li> <li>System Architecture</li> <li>Problem-Solving</li> </ul>
-![Screenshot (729)](https://github.com/user-attachments/assets/969276bc-12e8-49c1-a106-0ce236432b2c)
+![Screenshot (729)](https://github.com/user-attachments/assets/f762401b-7b79-4c55-9b0a-57618d625062)
+
