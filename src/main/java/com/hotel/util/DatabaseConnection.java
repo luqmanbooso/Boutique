@@ -14,7 +14,7 @@ public class DatabaseConnection {
 	// Private constructor to prevent direct instantiation (Singleton pattern)
 	private DatabaseConnection() throws ClassNotFoundException, SQLException {
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/hotel_systemdb", "root", "26244");
+		connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/hotel_systemdb", "root", "1234");
 	}
 
 	// Static method to get the singleton instance of DatabaseConnection
@@ -24,7 +24,7 @@ public class DatabaseConnection {
 		} else if (DatabaseConnection.connection.isClosed()) {
 			
 			DatabaseConnection.connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/hotel_systemdb",
-					"root", "26244");
+					"root", "1234");
 		}
 		return dBConnection;
 	}

@@ -478,7 +478,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> 
         </div>
     </section>
     <!-- Home Room Section End -->
