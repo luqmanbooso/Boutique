@@ -9,16 +9,19 @@ public class Review {
     private String reviewText;
     private int rating; 
     private Timestamp createdAt;
+    
+    private String status; 
 
     public Review() {}
     
-    public Review(int id, int userId, String userName, String reviewText, int rating, Timestamp createdAt) {
+    public Review(int id, int userId, String userName, String reviewText, int rating, Timestamp createdAt,String status) {
 		this.id = id;
 		this.userId = userId;
 		this.userName = userName;
 		this.reviewText = reviewText;
 		this.rating = rating;
 		this.createdAt = createdAt;
+		this.status = status;
 	}
 
 
@@ -74,12 +77,20 @@ public class Review {
         StringBuilder stars = new StringBuilder();
         for (int i = 1; i <= 5; i++) {
             if (i <= rating) {
-                stars.append("★"); // Filled star for rating
+                stars.append("★"); 
             } else {
-                stars.append("☆"); // Empty star for remaining
+                stars.append("☆"); 
             }
         }
         return stars.toString();
+    }
+    
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 
 }
